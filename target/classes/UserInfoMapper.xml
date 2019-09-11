@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper namespace="com.tcf.kid.smart.framework.mapper.UserInfoMapper">
+
+    <!-- TODO TCF 根据主键id查询用户信息 -->
+    <select id="selectById" parameterType="java.lang.String" resultType="com.tcf.kid.smart.framework.entity.UserInfo">
+        SELECT * FROM `UserInfo`
+        WHERE `ID`=?
+    </select>
+    
+</mapper>
